@@ -72,15 +72,17 @@ Save yourself hours of debugging! Learn from common mistakes.
 - Common error messages and their fixes
 - Performance optimization tips
 
-### [7. Actually Getting Messages to Work](./07-actually-getting-messages-to-work.md)
-**READ THIS if getContent() returns encrypted garbage!** The real truth about how message decryption actually works (spoiler: the docs lie about it being automatic).
+### ~~[7. Actually Getting Messages to Work](./07-actually-getting-messages-to-work.md)~~ (OUTDATED - Read #8 instead!)
+
+### [8. The ACTUAL Truth About Decryption](./08-the-ACTUAL-truth-about-decryption.md)
+**READ THIS if getContent() returns encrypted garbage!** I read the actual SDK source code this time.
 
 **You'll learn:**
-- How to load existing messages (not just new ones!)
-- Why getContent() returns encrypted content
-- The difference between getContent() and getClearContent()
-- How to properly wait for decryption to complete
-- Complete working examples that ACTUALLY decrypt messages
+- Why `getClearContent()` does NOT wait for decryption (it just returns null!)
+- The REAL way: `await client.decryptEventIfNeeded(event)`
+- How to load existing messages and decrypt them
+- Why new messages work but historical messages don't
+- Complete working examples from the actual SDK source
 
 ## 🚀 Quick Start
 

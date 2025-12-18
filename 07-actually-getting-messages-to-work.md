@@ -1,3 +1,11 @@
+# ⚠️ THIS TUTORIAL IS OUTDATED!
+
+**Read [Tutorial #8: The ACTUAL Truth About Decryption](./08-the-ACTUAL-truth-about-decryption.md) instead!**
+
+I was wrong about `getClearContent()` - it does NOT wait for decryption. Tutorial #8 has the correct solution using `client.decryptEventIfNeeded()`.
+
+---
+
 # Actually Getting Messages to Work (For Real This Time)
 
 Xylight, I hear you - the docs are useless. Let's fix your actual problems:

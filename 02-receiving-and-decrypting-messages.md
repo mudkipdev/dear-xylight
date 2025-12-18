@@ -2,9 +2,17 @@
 
 Hey Xylight! Now that your client is set up with crypto, let's get those encrypted messages flowing. This is where the magic happens!
 
+## ⚠️ IMPORTANT UPDATE
+
+**If `getContent()` is returning encrypted garbage instead of decrypted text, skip to [Tutorial #8](./08-the-ACTUAL-truth-about-decryption.md)!** That tutorial has the REAL solution using `client.decryptEventIfNeeded()`.
+
+The examples below work for *new* messages, but there's a gotcha with existing/historical messages.
+
 ## How Message Decryption Works
 
-The great news: **decryption happens automatically!** When you listen to timeline events, the SDK decrypts them for you before passing them to your event handler.
+The great news: **decryption happens automatically for new messages!** When you listen to timeline events, the SDK decrypts them for you before passing them to your event handler.
+
+However, for **existing messages** in the timeline, decryption happens asynchronously - see Tutorial #7 for details.
 
 ## Listening for Messages
 
