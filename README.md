@@ -72,6 +72,16 @@ Save yourself hours of debugging! Learn from common mistakes.
 - Common error messages and their fixes
 - Performance optimization tips
 
+### [7. Actually Getting Messages to Work](./07-actually-getting-messages-to-work.md)
+**READ THIS if getContent() returns encrypted garbage!** The real truth about how message decryption actually works (spoiler: the docs lie about it being automatic).
+
+**You'll learn:**
+- How to load existing messages (not just new ones!)
+- Why getContent() returns encrypted content
+- The difference between getContent() and getClearContent()
+- How to properly wait for decryption to complete
+- Complete working examples that ACTUALLY decrypt messages
+
 ## 🚀 Quick Start
 
 If you're just getting started, here's the absolute minimum to get a working client:
